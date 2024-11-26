@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrada Vektorskih Slika - SVG - Scalable Vector Graphics</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/logotypes/asss-logo.jfif"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            width="40"
+            class="img-fluid rounded"
+            src="../assets/logotypes/asss-logo.jfif"
+            alt="Vectior Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-1 justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../index.html">Uvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../istorija.html"
+                >Istorija</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../formati.html">
+                Formati
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../softveri.html">
+                Softveri
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary"
+                href="../poređenje-grafika.html"
+              >
+                Poređenje Grafika
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../materijali.html">
+                Materijali
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../slike.html">
+                Slike
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../literatura.html"
+                >Literatura</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../test.html">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="jumbotron text-center bg-light py-5">
+        <h1 class="display-4 heading-text">SVG - Scalable Vector Graphics</h1>
+        <p class="lead">Uvod u vektorske grafike</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <p>
+            SVG (Scalable Vector Graphics) format je XML baziran format za
+            opisivanje vektorskih slika koji se koristi za kreiranje 2D grafike
+            sa podrškom za interaktivnost i animacije. SVG je W3C standard, što
+            znači da je široko podržan u modernim web pretraživačima i koristi
+            se u različitim oblastima kao što su web dizajn, infografike, ikone,
+            mape i još mnogo toga.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-9">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="../assets/icons/feature-icon.svg"
+              class="img-fluid rounded"
+              width="40"
+              alt="feature icon"
+            />
+            <h4 class="my-3">Osnovne karakteristike SVG formata</h4>
+          </div>
+          <p>
+            SVG slike su vektorske, što znači da se sastoje od matematičkih
+            proračuna umesto piksela. Ovo ima nekoliko prednosti:
+          </p>
+
+          <ul>
+            <li>
+              <p>
+                <strong>Skalabilnost</strong>: SVG se može skalirati bez gubitka
+                kvaliteta jer se temelji na vektorima. Bez obzira na to koliko
+                slika bude uvećana ili smanjena, neće izgubiti oštrinu.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <strong>Rezolucija</strong>: SVG je idealan za visokorezolucione
+                ekrane (poput Retina ekrana) jer se ovi prikazuju bez
+                pikselizacije.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Male veličine datoteka</strong>: U poređenju sa raster
+                formatima (kao što su JPEG ili PNG), SVG slike su često manje,
+                što ubrzava učitavanje web stranica.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <img
+            class="img-fluid rounded"
+            src="../assets/img/svg-and-png.png"
+            alt="SVG & PNG images"
+          />
+          <p>
+            <small class="p-1"
+              ><i>Razlika izmedju SVG i PNG formata slika</i></small
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-3 align-self-center">
+          <img
+            class="img-fluid rounded"
+            src="../assets/img/svg-on-web.svg"
+            alt="SVG on Web"
+          />
+          <p>
+            <small class="p-1"
+              ><i>Načini upotrebe SVG-a na web stranici</i></small
+            >
+          </p>
+        </div>
+        <div class="col-md-9">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="../assets/icons/browser-icon.svg"
+              class="img-fluid rounded"
+              width="40"
+              alt="browser icon"
+            />
+            <h4 class="my-4">Upotreba SVG-a na webu</h4>
+          </div>
+          <p>SVG se može koristiti u različite svrhe na webu:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Ikonice i logotipi</strong>: SVG je popularan format za
+                ikonice i logotipe jer omogućava skaliranje bez gubitka
+                kvaliteta.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Interaktivne mape i dijagrami</strong>: SVG omogućava
+                lako postavljanje interaktivnih elemenata i animacija, što ga
+                čini idealnim za složene grafike, kao što su mape i dijagrami.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Animacije</strong>:SVG podržava animacije putem CSS-a i
+                JavaScript-a, omogućavajući kreiranje dinamičnih i interaktivnih
+                vizuelnih elemenata.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-9">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="../assets/icons/power-icon.svg"
+              class="img-fluid rounded"
+              width="40"
+              alt="power icon"
+            />
+            <h4 class="my-4">Prednosti SVG formata</h4>
+          </div>
+          <ul>
+            <li>
+              <p>
+                <strong>Puna kontrola nad stilovima</strong>: SVG slike mogu se
+                stilizovati pomoću CSS-a, omogućavajući promenu boja, veličine i
+                drugih aspekata grafike bez potrebe za ponovnim učitavanjem
+                slike.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Manipulacija putem JavaScript-a</strong>: SVG elementi
+                su dostupni u DOM-u, što znači da se mogu manipulirati putem
+                JavaScript-a za dodavanje interaktivnosti, poput animacija ili
+                događaja na klik.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>SEO i pristupačnost</strong>: SVG slike su tekstualno
+                zasnovane, što ih čini dostupnim za indeksiranje od strane
+                pretraživača i olakšava optimizaciju za SEO. Takođe, omogućava
+                lakšu pristupačnost za korisnike sa invaliditetom jer se
+                elementi mogu označiti tako da čitači ekrana mogu interpretirati
+                sadržaj.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 align-self-center">
+          <img
+            class="img-fluid rounded"
+            src="../assets/img/js_manage_svg.png"
+            alt="SVG on Web"
+          />
+          <p>
+            <small class="p-1"
+              ><i>Manipulacija JavaScript-a nad SVG fajlom</i></small
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="../assets/icons/building-icon.svg"
+              class="img-fluid rounded"
+              width="40"
+              alt="building icon"
+            />
+            <h4 class="my-4">Struktura SVG fajla</h4>
+          </div>
+          <p>
+            SVG fajl je zasnovan na XML-u i može sadržati različite elemente za
+            kreiranje grafike. Primer osnovne SVG strukture:
+          </p>
+          <img
+            src="../assets/snapshots/xml-code.png"
+            alt="XML code"
+            class="img-fluid rounded my-3 col-md-6"
+          />
+          <p>
+            U ovom primeru kreiran je plavi krug. Osnovni elementi u SVG-u
+            uključuju:
+          </p>
+
+          <ul>
+            <li><kbd>&lt;circle&gt;</kbd> za kreiranje krugova</li>
+            <li><kbd>&lt;rect&gt;</kbd> za pravougaonike</li>
+            <li><kbd>&lt;line&gt;</kbd> za linije</li>
+            <li>
+              <kbd>&lt;polygon&gt;</kbd> i <kbd>&lt;polyline&gt;</kbd> za
+              složenije oblike
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="../assets/icons/window-icon.svg"
+              class="img-fluid rounded"
+              width="40"
+              alt="window icon"
+            />
+            <h4 class="my-4">Integracija SVG-a na web stranice</h4>
+          </div>
+          <p>
+            Postoji nekoliko načina za korišćenje SVG grafike na web stranici:
+          </p>
+          <ul>
+            <li>
+              <p class="my-3">
+                <strong>Kao <kbd>&lt;img&gt;</kbd> tag</strong>:
+                Najjednostavniji način je da se SVG datoteka poveže kao slika:
+              </p>
+              <img
+                src="../assets/snapshots/html-code.png"
+                alt="HTML code"
+                class="img-fluid rounded col-md-6"
+              />
+            </li>
+            <li>
+              <p class="my-3"><strong>Kao pozadina u CSS-u</strong>:</p>
+              <img
+                src="../assets/snapshots/css-code.png"
+                alt="CSS code"
+                class="img-fluid rounded col-md-6"
+              />
+            </li>
+            <li>
+              <p class="my-3 col-md-6">
+                <strong>Direktna ugradnja u HTML</strong>: SVG kod se može
+                direktno ugraditi u HTML dokument. Ovo omogućava da SVG bude deo
+                DOM-a, što znači da se može lako stilizovati i manipulirati
+                putem JavaScript-a.
+              </p>
+              <img
+                src="../assets/snapshots/html-code2.png"
+                alt="HTML code 2"
+                class="img-fluid rounded col-md-6"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="m-0">Podrška za animacije</h4>
+          </div>
+          <p>
+            SVG podržava animacije, omogućavajući dinamične prikaze putem CSS
+            ili JavaScript animacija. Na primer, CSS animacije se mogu koristiti
+            za pravljenje pulsirajućeg efekta:
+          </p>
+          <img
+            src="../assets/snapshots/html-code3.png"
+            alt="HTML code 3"
+            class="img-fluid rounded col-md-6 my-3"
+          />
+          <p>
+            Ove animacije su odlične za vizuelno privlačne web sajtove i
+            omogućavaju bogato korisničko iskustvo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="m-0">Optimizacija SVG-a</h4>
+          </div>
+          <p>
+            Optimizacija SVG-a smanjuje veličinu datoteke i može poboljšati
+            učitavanje stranice:
+          </p>
+          <ul>
+            <li>
+              <strong>Uklanjanje nepotrebnih atributa i komentara</strong>: SVG
+              kod može imati suvišne atribute koje alati kao što su SVGO mogu
+              ukloniti.
+            </li>
+            <li>
+              <strong>Minifikacija</strong>: Minifikacija SVG-a uklanja razmake
+              i smanjuje veličinu fajla.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="m-0">Alati za rad sa SVG formatom</h4>
+          </div>
+          <p>
+            Optimizacija SVG-a smanjuje veličinu datoteke i može poboljšati
+            učitavanje stranice:
+          </p>
+          <ul>
+            <li>
+              <strong>Inkscape</strong> i <strong>Adobe Illustrator</strong> su
+              popularni programi za kreiranje i uređivanje SVG grafike.
+            </li>
+            <li>
+              <strong>SVGOMG</strong> i <strong>SVGO</strong> su alati za
+              optimizaciju SVG-a za web
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="m-0">Popularna primena SVG-a</h4>
+          </div>
+          <p>SVG format je odličan izbor za različite namene:</p>
+          <ul>
+            <li>
+              <strong>Ikonice</strong> i
+              <strong>korisnički interfejs</strong> Veoma popularan za ikonice
+              zbog skalabilnosti i malih veličina datoteka.
+            </li>
+            <li>
+              <strong>Interaktivni grafovi</strong> i
+              <strong>grafikoni</strong>: SVG omogućava kreiranje interaktivnih
+              grafikona sa animacijama.
+            </li>
+            <li>
+              <strong>Animirani baneri</strong> i <strong>elementi</strong>: SVG
+              animacije mogu stvoriti živopisne i privlačne vizuale.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            class="img-fluid"
+            src="../assets/logotypes/asss-logo.jfif"
+            alt="ASSS Logo"
+          />
+        </a>
+        <button
+          title="hamburger menu"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#uvod">Uvod</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="../istorija.html">Istorija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../formati.html">Formati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../softveri.html">Softveri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../poređenje-grafika.html"
+                >Poređenje Grafika</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../materijali.html">
+                Materijali
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../slike.html">
+                Materijali
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../literatura.html"
+                >Literatura</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../test.html">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <footer class="bg-light text-center py-4">
+      <p class="copyright">
+        &copy; 2024 Obrada Vektorskih Slika. Sva prava zadržana.
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/effects.js"></script>
+  </body>
+</html>

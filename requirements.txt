@@ -1,0 +1,6 @@
+- Posebno teziste na CorelDRAW aplikaciju - ✅
+- Svaka pomenuta app trebalo bi da ima svoju stranicu - ✅
+- Literatura kao posebna stranica - ✅
+- Karousel sa primerima slika - ✅
+- Istorija posle uvoda   - ✅
+- zameniti vektorske slike link u footeru, postaviti logo akademije  - ✅

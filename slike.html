@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrada Vektorskih Slika - Slike</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/logotypes/asss-logo.jfif"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            width="40"
+            class="img-fluid rounded"
+            src="./assets/logotypes/asss-logo.jfif"
+            alt="Vectior Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-1 justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="index.html">Uvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="istorija.html">
+                Istorija
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="formati.html">
+                Formati
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="softveri.html">
+                Softveri
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="poređenje-grafika.html">
+                Poređenje Grafika
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="materijali.html">
+                Materijali
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="slike.html">Slike</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="literatura.html"
+                >Literatura</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="test.html">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="jumbotron text-center bg-light py-5">
+        <h1 class="display-4 heading-text">Slike</h1>
+      </div>
+    </div>
+
+    <main class="container my-5">
+      <h2 class="text-center heading-text">Primer vektoriskih slika</h2>
+      <!-- Carousel Section -->
+      <section class="container py-5">
+        <div
+          id="galleryCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicators -->
+
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="backdrop"></div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/carousel-img/vector1.jfif"
+                  class="d-block w-100 c-img"
+                  alt="vector 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/carousel-img/vector2.jfif"
+                  class="d-block w-100 c-img"
+                  alt="vector 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/carousel-img/vector6.jpg"
+                  class="d-block w-100 c-img"
+                  alt="vector 6"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/carousel-img/vector8.jfif"
+                  class="d-block w-100 c-img"
+                  alt="vector 8"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/carousel-img/vector10.webp"
+                  class="d-block w-100 c-img"
+                  alt="vector 10"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/carousel-img/vector11.png"
+                  class="d-block w-100 c-img"
+                  alt="vector 11"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5 thumbnail-gallery">
+        <h2 class="text-center mb-4 heading-text">Thumbnail Galerija</h2>
+        <p class="text-center mb-5">
+          Pregled različitih primera grafičkih dizajna u manjim dimenzijama.
+        </p>
+
+        <!-- Thumbnails Grid -->
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/animation1.gif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 1"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/billboard.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 2"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/futuristic.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 3"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/girl-illustration.jpg"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 4"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/guitar.jpg"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 5"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/illustration1.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 6"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/portrait.jpg"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 7"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/basketball.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 8"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/tigers.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 5"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/guitar.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 6"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/flowers.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 7"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./assets/gallery/sunset.jfif"
+              class="img-fluid rounded shadow-sm"
+              alt="Primer 8"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            class="img-fluid"
+            src="./assets/logotypes/asss-logo.jfif"
+            alt="ASSS Logo"
+          />
+        </a>
+        <button
+          title="hamburger menu"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Uvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="istorija.html">
+                Istorija
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formati.html">Formati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="softveri.html">Softveri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="poređenje-grafika.html"
+                >Poređenje Grafika</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="slike.html">Slike</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="materijali.html">
+                Materijali
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="literatura.html"
+                >Literatura</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="test.html">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <footer class="bg-light text-center py-4">
+      <p class="copyright">
+        &copy; 2024 Obrada Vektorskih Slika. Sva prava zadržana.
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/effects.js"></script>
+  </body>
+</html>
