@@ -1,0 +1,11 @@
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  img {
+    width: 35%;
+    margin: 1rem auto;
+  }
+}

@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --base-font: "Montserrat-Regular";
+  --bold-font: "Montserrat-SemiBold";
+  --primary-color: #4d004d;
+  --secondary-color: #1d1d1d;
+  --primary-font: "Montserrat-Regular";
+}
+
+html {
+  letter-spacing: 0.01rem;
+}
+
+body {
+  font-family: var(--base-font);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+pre {
+  background-color: #f5f7fa;
+  color: #333;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  overflow-x: auto;
+}
+
+pre code {
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+pre code .tag {
+  color: #d73a49;
+}
+pre code .attr {
+  color: #6f42c1;
+}
+pre code .value {
+  color: #032f62;
+}
+
+.navbar-nav {
+  .nav-item.active {
+    a {
+      color: var(--bs-indigo) !important;
+    }
+  }
+}
+
+.table {
+  thead {
+    background-color: #f5f7fa;
+  }
+}
+
+/* Banner image on index page */
+
+.banner-image {
+  background-image: url("../assets/img/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: background-size 0.2s ease;
+  min-height: 30rem;
+  display: grid;
+  place-items: center;
+  color: #fff;
+
+  .jumbotron {
+    position: relative;
+    z-index: 100;
+  }
+
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.navbar-light .navbar-toggler-icon,
+.navbar-toggler-icon {
+  background: url("../assets/icons/hamburger-icon.png");
+  background-size: contain;
+}
+
+.carousel {
+  .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 11;
+  }
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.heading-text {
+  color: var(--bs-indigo);
+}
+
+.materials-image {
+  background-image: url("../assets/img/materials.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: background-size 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .jumbotron {
+    position: relative;
+    background-color: transparent;
+    color: #fff;
+    z-index: 100;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+}
+
+#galleryCarousel {
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+
+  .carousel-inner {
+    height: 235px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 235px;
+    }
+  }
+}
+
+.thumbnail-gallery {
+  img {
+    width: 275px;
+    height: 183px;
+    object-fit: cover;
+    filter: brightness(0.8);
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 60%;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
