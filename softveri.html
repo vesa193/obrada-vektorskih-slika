@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-light">
+    <nav
+      class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-top bg-light"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
@@ -107,7 +109,7 @@
     <div class="container my-5">
       <!-- Sekcija: Popularni alati -->
       <section class="my-5 pt-10">
-        <div class="row mb-4">
+        <div class="row mb-4 gy-4">
           <div class="col-md-6">
             <h3 class="heading-text">
               <a href="partials/adobe-illustrator.html">Adobe Illustrator</a>
@@ -143,7 +145,7 @@
           </div>
         </div>
 
-        <div class="row mb-4">
+        <div class="row mb-4 gy-4">
           <div class="col-md-6 order-md-2">
             <h3 class="heading-text">
               <a href="partials/coreldraw.html">CorelDRAW</a>
@@ -175,7 +177,7 @@
           </div>
         </div>
 
-        <div class="row mb-4">
+        <div class="row mb-4 gy-4">
           <div class="col-md-6">
             <h3 class="heading-text">
               <a href="partials/inkscape.html">Inkscape</a>
@@ -243,13 +245,6 @@
             </tbody>
           </table>
         </div>
-        <div class="placeholder mt-4">
-          <img
-            class="img-fluid rounded w-100 h-200 d-block"
-            src="./assets/img/softwere-bg.jpg"
-            alt="Poređenje softvera"
-          />
-        </div>
       </section>
 
       <!-- Sekcija: Linkovi za preuzimanje -->
@@ -261,17 +256,28 @@
               href="https://www.adobe.com/products/illustrator.html"
               rel="noopener"
               target="_blank"
+              class="link-primary"
             >
               Adobe Illustrator zvanična stranica</a
             >
           </li>
           <li>
-            <a href="https://www.coreldraw.com" rel="noopener" target="_blank">
+            <a
+              href="https://www.coreldraw.com"
+              rel="noopener"
+              target="_blank"
+              class="link-primary"
+            >
               CorelDRAW zvanična stranica</a
             >
           </li>
           <li>
-            <a href="https://inkscape.org" rel="noopener" target="_blank">
+            <a
+              href="https://inkscape.org"
+              rel="noopener"
+              target="_blank"
+              class="link-primary"
+            >
               Inkscape zvanična stranica</a
             >
           </li>
@@ -279,7 +285,7 @@
       </section>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-footer navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img
@@ -288,16 +294,8 @@
             alt="ASSS Logo"
           />
         </a>
-        <button
-          title="hamburger menu"
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <div class="" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Uvod</a>

@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-light">
+    <nav
+      class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-top bg-light"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
@@ -32,7 +34,7 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -99,11 +101,12 @@
         </div>
       </div>
 
-      <div class="container my-5">
-        <div class="row d-flex flex-column g-4 align-items-center">
+      <div class="wrapper-iframe container my-5 d-flex justify-content-center">
+        <div class="container-iframe d-none">
           <iframe
-            width="1920"
-            height="919"
+            class="responsive-iframe"
+            width="60%"
+            height="500px"
             src="https://www.youtube.com/embed/nfWzGry4skQ"
             title=""
             frameborder="0"
@@ -115,7 +118,7 @@
       </div>
     </main>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-footer navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img
@@ -124,16 +127,8 @@
             alt="ASSS Logo"
           />
         </a>
-        <button
-          title="hamburger menu"
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <div class="" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Uvod</a>
@@ -186,5 +181,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/video.js"></script>
   </body>
 </html>
