@@ -4,7 +4,7 @@ const containerIframe = document.querySelector(".container-iframe");
 const spinner = new Image();
 
 window.addEventListener("DOMContentLoaded", () => {
-  spinner.classList.add("mx-auto");
+  spinner.classList.add("img-fluid", "mx-auto");
   spinner.src = `${base}/assets/img/spinner.gif`;
   wrapperIframe.insertAdjacentElement("afterbegin", spinner);
 });
